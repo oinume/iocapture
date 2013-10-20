@@ -1,5 +1,5 @@
 .. -*- restructuredtext -*-
-
+.. highlight:: bash
 .. image:: https://secure.travis-ci.org/oinume/iocapture.png?branch=master
 
 Capture stdout, stderr easily with iocapture.
