@@ -1,0 +1,11 @@
+env/
+*.pyc
+*.egg-info/
+dist/
+htmlcov/
+.coverage
+.tox
+.idea
+*.iml
+junit-*.xml
+requirements*.txt
