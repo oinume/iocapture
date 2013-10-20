@@ -1,5 +1,9 @@
-import cStringIO
 import sys
+
+if sys.version_info > (3, 0):
+    from io import StringIO
+else:
+    from cStringIO import StringIO
 
 __author__ = "Kazuhiro Oinuma"
 __author_email__ = "oinume@gmail.com"
@@ -12,8 +16,6 @@ __status__ = "Production/Stable"
 def capture(stdout=True, stderr=True):
     return IOCapture(stdout, stderr)
 
-__all__ = [ capture ]
-
 class IOCapture(object):
     """"""
 
@@ -21,9 +23,9 @@ class IOCapture(object):
         self._stdout = None
         self._stderr = None
         if stdout:
-            self._stdout = cStringIO.StringIO()
+            self._stdout = StringIO()
         if stderr:
-            self._stderr = cStringIO.StringIO()
+            self._stderr = StringIO()
 
     def start(self):
         if self._stdout:
@@ -62,29 +64,4 @@ class IOCapture(object):
     def __exit__(self, type, value, traceback):
         self.stop().close()
 
-#@contextlib.contextmanager
-#def capture():
-#    import sys
-#    from cStringIO import StringIO
-#    oldout,olderr = sys.stdout, sys.stderr
-#    try:
-#        out=[StringIO(), StringIO()]
-#        sys.stdout,sys.stderr = out
-#        yield out
-#    finally:
-#        sys.stdout,sys.stderr = oldout, olderr
-#        out[0] = out[0].getvalue()
-#        out[1] = out[1].getvalue()
-#
-#with capture() as out:
-#    print 'hi'
-
-
-#from iocapture import capture
-#
-#with capture() as stdout, stderr:
-#    pass
-
-#with iocapture.capture() as captured:
-#    captured.stdout
-#    captured.stderr
+__all__ = [ capture, IOCapture ]

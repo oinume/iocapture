@@ -24,7 +24,7 @@ if sys.argv[-1] == "publish":
     os.system("python setup.py sdist upload")
     sys.exit()
 
-tests_require = [ "flexmock", "pytest", "pytest-cov" ]
+tests_require = [ "flexmock", "pytest", "pytest-cov", "six" ]
 
 requirements_dev = open("requirements-dev.txt", "w")
 requirements_dev.writelines("\n".join(tests_require))
