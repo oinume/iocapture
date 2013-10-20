@@ -7,7 +7,7 @@ Capture stdout, stderr easily with iocapture.
 How to use
 ==========
 
-With Python >= 2.6 ::
+With Python >= 2.5 ::
 
   import iocapture
 
@@ -16,7 +16,7 @@ With Python >= 2.6 ::
       print(captured.stdout)
   # >>> hello stdout
 
-With Python < 2.6 ::
+With Python < 2.5 ::
 
   import iocapture
 
