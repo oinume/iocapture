@@ -26,8 +26,8 @@ if sys.argv[-1] == "publish":
 
 tests_require = []
 for package in open("requirements-dev.txt").read().split("\n"):
-    if package:
-        tests_require.append(package)
+    if package.strip():
+        tests_require.append(package.strip())
 
 setup(
     name = "iocapture",
