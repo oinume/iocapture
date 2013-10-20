@@ -1,5 +1,7 @@
 .. -*- restructuredtext -*-
-.. highlight:: bash
+
+.. highlight:: python
+
 .. image:: https://secure.travis-ci.org/oinume/iocapture.png?branch=master
 
 Capture stdout, stderr easily with iocapture.
