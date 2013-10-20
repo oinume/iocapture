@@ -8,7 +8,7 @@ from iocapture import (
 )
 
 def get_long_description():
-    return open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.rst")).read()
+    return open("README.rst").read()
 
 try:
     from setuptools import setup
@@ -24,12 +24,10 @@ if sys.argv[-1] == "publish":
     os.system("python setup.py sdist upload")
     sys.exit()
 
-tests_require = [ "flexmock", "pytest", "pytest-cov", "six" ]
-
-requirements_dev = open("requirements-dev.txt", "w")
-requirements_dev.writelines("\n".join(tests_require))
-requirements_dev.close()
-print("requirements-dev.txt created")
+tests_require = []
+for package in open("requirements-dev.txt").read().split("\n"):
+    if package:
+        tests_require.append(package)
 
 setup(
     name = "iocapture",
