@@ -1,0 +1,15 @@
+Requirements
+  - python >= 2.4
+
+How to install
+  tar xvzf iocapture-x.y.z.tar.gz
+  cd iocapture-x.y.z
+  python setup.py install
+
+  or
+
+  easy_install iocapture
+
+  or
+
+  pip install iocapture

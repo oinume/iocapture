@@ -37,13 +37,13 @@ https://github.com/oinume/blob/master/changes.rst
 
 For developers
 ==============
-Install tomahawk in develop mode. ::
+Install iocapture in develop mode. ::
 
   $ python setup.py develop
 
 Install following modules for testing. ::
 
-  $ pip install requirements-dev.txt
+  $ pip install -r requirements-dev.txt
 
 Run tests ::
 
