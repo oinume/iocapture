@@ -2,7 +2,7 @@
 
 .. highlight:: python
 
-.. image:: https://img.shields.io/pypi/v/nine.svg
+.. image:: https://img.shields.io/pypi/v/iocapture.svg
 
 .. image:: https://img.shields.io/travis/oinume/iocapture.svg
 
