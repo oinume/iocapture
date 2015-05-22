@@ -9,3 +9,4 @@ install:
   - "pip install . --use-mirrors -r requirements-dev.txt"
 script:
   - py.test tests
+sudo: false
