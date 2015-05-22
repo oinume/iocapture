@@ -2,7 +2,10 @@
 
 .. highlight:: python
 
-.. image:: https://secure.travis-ci.org/oinume/iocapture.png?branch=master
+.. image:: https://img.shields.io/pypi/v/nine.svg
+
+.. image:: https://img.shields.io/travis/oinume/iocapture.svg
+
 
 Capture stdout, stderr easily with iocapture.
 
