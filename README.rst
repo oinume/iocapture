@@ -3,8 +3,10 @@
 .. highlight:: python
 
 .. image:: https://img.shields.io/pypi/v/iocapture.svg
+   :target: https://pypi.python.org/pypi/iocapture/
 
 .. image:: https://img.shields.io/travis/oinume/iocapture.svg
+   :target: https://travis-ci.org/oinume/iocapture
 
 
 Capture stdout, stderr easily with iocapture.
