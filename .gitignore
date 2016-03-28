@@ -8,3 +8,4 @@ htmlcov/
 .idea
 *.iml
 junit-*.xml
+.cache
