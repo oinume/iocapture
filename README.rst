@@ -37,7 +37,7 @@ With Python < 2.5 ::
 ChangeLog
 =========
 
-https://github.com/oinume/blob/master/changes.rst
+https://github.com/oinume/iocapture/blob/master/changes.rst
 
 
 For developers
